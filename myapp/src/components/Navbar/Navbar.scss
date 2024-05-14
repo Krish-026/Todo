@@ -1,0 +1,14 @@
+.navbar {
+  background-color: #1976d2;
+  
+  .navbar__title {
+    flex-grow: 1;
+  }
+
+  .navbar__links {
+    display: flex;
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+}

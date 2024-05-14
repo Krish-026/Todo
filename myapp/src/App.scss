@@ -1,0 +1,69 @@
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    margin: 24px auto;
+    padding: 16px;
+    max-width: 1150px;
+    .formContainer {
+        padding: 24px;
+
+        .heading {
+            text-align: center;
+            color: rgba(0, 102, 255, 0.826);
+            margin-bottom: 32px;
+        }
+
+        .gridOne {
+            justify-content: space-evenly;
+        }
+    }
+
+    .taskGrid {
+        margin: 24px 0 16px 0;
+
+        .listContainer {
+            min-height: 300px;
+            height: auto;
+            background-color: white;
+            padding: 16px;
+
+            .listTypography {
+                padding-left: 16px;
+                color: red;
+            }
+
+            .noTask{
+                text-align: center;
+                color: gray;
+                margin-top: 30px;
+            }
+
+            .avatarList{
+                background-color: rgba(0, 102, 255, 0.826);
+                color: white;
+            }
+
+            .doneOutlineIcon{
+                color: green;
+            }
+
+            .deleteForeverIcon{
+                color: red;
+            }
+
+            .listTypographyCompleted{
+                padding-left: 16px;
+                color: rgb(14, 196, 14);
+            }
+            .avatarListCompleted{
+                background-color: green;
+                color: white;
+            }
+        }
+    }
+}
