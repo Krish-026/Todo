@@ -9,7 +9,6 @@ export const completedTaskSlice = createSlice({
     initialState,
     reducers: {
         setCompletedTaskData: (state, action) => {
-            console.log('Completed Task Data', action.payload)
             state.completedTask = action.payload || [];
         },
         addCompletedTask: (state, action) => {

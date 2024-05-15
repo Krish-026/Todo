@@ -19,9 +19,6 @@ function Todo() {
         const savedRemainingTask = JSON.parse(localStorage.getItem('remainingTask'));
         const savedCompletedTask = JSON.parse(localStorage.getItem('completedTask'));
 
-        console.log('Remaining task', savedRemainingTask);
-        console.log('Completed Task', savedCompletedTask);
-
         dispatch(setRemainingTaskData(savedRemainingTask || []));
         dispatch(setCompletedTaskData(savedCompletedTask || []));
 

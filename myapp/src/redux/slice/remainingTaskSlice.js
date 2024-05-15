@@ -9,7 +9,6 @@ export const remainingTaskSlice = createSlice({
     initialState,
     reducers: {
         setRemainingTaskData: (state, action) => {
-            console.log('Remaining Task Data', action.payload)
             state.remainingTask = action.payload || [];
         },
         addRemainingTask: (state, action) => {

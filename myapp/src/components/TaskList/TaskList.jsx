@@ -5,8 +5,6 @@ import { format } from 'date-fns';
 import './TaskList.scss'
 
 function TaskList({ remainingTask, completedTask, handleTaskCompleted, handleTaskDeleted, handleCompletedTaskDeleted }) {
-    console.log("Remaining Task in TaskList", remainingTask);
-    console.log("Completed Task in TaskList", completedTask);
     return (
         <>
             <Grid item xs={12} className='taskGrid'>
@@ -53,7 +51,7 @@ function TaskList({ remainingTask, completedTask, handleTaskCompleted, handleTas
                                 <Typography className='listTypographyCompleted' variant='h5'>Completed Task</Typography>
                                 {/* completedTask */}
                                 {completedTask && completedTask.length > 0
-                                    ? completedTask.map((task, key) => (
+                                    ? completedTask?.map((task, key) => (
                                         <ListItem key={key}>
                                             <ListItemAvatar>
                                                 <Avatar className='avatarListCompleted'>{task.title[0].toUpperCase()}</Avatar>
